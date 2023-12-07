@@ -1,0 +1,36 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підказка до уроку</title>
+    <link rel="icon" type="image/png" href="https://school173.com.ua/assets/img/school-attributes/school-emblem.png">
+    <style>
+        #ll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #ll img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="ll"></div>
+    <script>
+        var password = prompt("Enter the password");
+        var place = document.getElementById("ll");
+
+        if (password === "tip") {
+            place.innerHTML = '<img src="ray-tip-code.png">';
+        } else if (password === "advanced") {
+            place.innerHTML = '<img src="ray-advanced-code.png">';
+        } else {
+            alert("Incorrect password!");
+        }
+    </script>
+
+
+</body></html>
